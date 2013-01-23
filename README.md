@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/pads/grunt-html-annotation.png)](https://travis-ci.org/pads/grunt-html-annotation)
+
 # grunt-html-annotation
 
 Annotate elements in HTML pages
