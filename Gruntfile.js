@@ -1,11 +1,8 @@
 module.exports = function (grunt) {
 
     grunt.initConfig({
-        test:{
+        nodeunit:{
             files:['test/**/*.js']
-        },
-        lint:{
-            files:['grunt.js', 'tasks/**/*.js', 'test/**/*.js']
         },
         watch:{
             files:'<config:lint.files>',
@@ -25,9 +22,10 @@ module.exports = function (grunt) {
                 eqnull:true,
                 node:true,
                 es5:true,
-                strict:false
+                strict:false,
+                globals:{}
             },
-            globals:{}
+            files:['Gruntfile.js', 'tasks/**/*.js', 'test/**/*.js']
         },
         clean: {
             test: ['test/fixtures/gen']
@@ -40,8 +38,11 @@ module.exports = function (grunt) {
 
     grunt.loadTasks('tasks');
 
+    grunt.loadNpmTasks('grunt-contrib-nodeunit');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-clean');
 
-    grunt.registerTask('default', 'clean lint html-annotation test');
+    grunt.registerTask('default', ['clean', 'jshint', 'html-annotation', 'nodeunit']);
 
 };

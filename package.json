@@ -1,42 +1,45 @@
 {
-    "name":"grunt-html-annotation",
-    "description":"Annotate elements in HTML pages",
-    "version":"0.1.0",
-    "homepage":"https://github.com/pads/grunt-html-annotation",
-    "author":{
-        "name":"Ben Paddock",
-        "email":"pads@thisispads.me.uk",
-        "url":"http://thisispads.me.uk"
-    },
-    "repository":{
-        "type":"git",
-        "url":"git://github.com/pads/grunt-html-annotation.git"
-    },
-    "bugs":{
-        "url":"https://github.com/pads/grunt-html-annotation/issues"
-    },
-    "licenses":[
-        {
-            "type":"MIT",
-            "url":"https://github.com/pads/grunt-html-annotation/blob/master/LICENSE-MIT"
-        }
-    ],
-    "main":"grunt.js",
-    "bin":"bin/grunt-html-annotation",
-    "engines":{
-        "node":"*"
-    },
-    "scripts":{
-        "test":"grunt"
-    },
-    "devDependencies":{
-        "grunt":"~0.3.17",
-        "grunt-contrib-clean":"~0.3.1"
-    },
-    "keywords":[
-        "gruntplugin"
-    ],
-    "dependencies":{
-        "jquery":"~1.8.3"
+  "name": "grunt-html-annotation",
+  "description": "Annotate elements in HTML pages",
+  "version": "0.2.0",
+  "homepage": "https://github.com/pads/grunt-html-annotation",
+  "author": {
+    "name": "Ben Paddock",
+    "email": "pads@thisispads.me.uk",
+    "url": "http://thisispads.me.uk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pads/grunt-html-annotation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pads/grunt-html-annotation/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/pads/grunt-html-annotation/blob/master/LICENSE-MIT"
     }
+  ],
+  "main": "Gruntfile.js",
+  "bin": "bin/grunt-html-annotation",
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-nodeunit": "~0.1.2"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "dependencies": {
+    "jquery": "~1.8.3"
+  }
 }

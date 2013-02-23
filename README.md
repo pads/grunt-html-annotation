@@ -7,7 +7,7 @@ Annotate elements in HTML pages
 ## Getting Started
 Install this grunt plugin next to your project's [grunt.js gruntfile][getting_started] with: `npm install grunt-html-annotation`
 
-Then add this line to your project's `grunt.js` gruntfile:
+Then add this line to your project's `Gruntfile.js` gruntfile:
 
 ```javascript
 grunt.loadNpmTasks('grunt-html-annotation');
@@ -17,7 +17,7 @@ grunt.loadNpmTasks('grunt-html-annotation');
 [getting_started]: https://github.com/gruntjs/grunt/blob/master/docs/getting_started.md
 
 ## Documentation
-A very simple plugin (grunt 0.3 only for the time being) that annotates HTML elements with their tag names e.g:
+A very simple plugin that annotates HTML elements with their tag names e.g:
 
 Before:
     `<h1>A header</h1>`
@@ -42,7 +42,6 @@ Run `grunt html-annotation` and the generated files will appear in the folder as
 
 ### Possible Upcoming Features
 
-* Grunt 0.4 compatible.
 * Make annotation configurable.
 * Multi-task options.
 
@@ -51,6 +50,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 * 0.1.0 - Initial plugin release.
+* 0.2.0 - Grunt 0.4 compatible.
 
 ## License
 Copyright (c) 2013 Ben Paddock  
